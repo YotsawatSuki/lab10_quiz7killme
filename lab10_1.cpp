@@ -30,8 +30,7 @@ int main(){
 	int year = 1;
 	double sum;
 	
-	while(sum>0){
-		
+	do{
 		cout << fixed << setprecision(2); 
 		cout << setw(13) << left << year; 
 		cout << setw(13) << left << loan;
@@ -52,7 +51,8 @@ int main(){
 		cout << "\n";
 		year++;
 		sum = NewBar;
-		loan = sum;
-	}
+		loan = NewBar;
+	}while(sum>0);
+	
 	return 0;
 }
